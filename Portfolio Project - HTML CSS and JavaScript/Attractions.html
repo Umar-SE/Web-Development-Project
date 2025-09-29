@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The City Bee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Attractions.css">
+    </head>
+    <body>
+
+        <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+            <h2 style="display: inline-block; margin: 0;">The City Bee</h2>
+            <button onclick="toggleTheme()" style="margin-left: 20px; padding: 10px; background-color: yellow; border: none; border-radius: 5px; cursor: pointer;">
+                Toggle Theme
+            </button>
+            <img src="Assets/Header_Image.jpg" alt="Logo" style="float: right; height: 80px; margin: 5px;">
+        </header>
+
+        <script>
+             function toggleTheme() {
+                const body = document.body;
+                const article = document.querySelector("article");
+                const isDark = body.style.backgroundColor === 'black';
+
+                if (isDark) {
+                    body.style.backgroundColor = "White";
+                    body.style.color = "black";
+                    article.style.backgroundColor = "#f1f1f1";
+                } else {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "white";
+                    article.style.backgroundColor = "#000000";
+                }
+            }
+        </script>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="City.html">The City Life</a></li>
+                    <li><a href="Attractions.html">Iconic Attractions</a></li>
+                    <li><a href="Landmarks.html">Stunning Views</a></li>
+                </ul>
+            </nav>
+        </div>
+            <article>
+                <h1>Things to do in Manchester.</h1>
+                <h2>Media City</h2>
+                <p>Media City is home of the creative arts in Manchester. Its one huge collective part of the city where many major brands come together and make a euphoria of attractions. This includes places like the BBC, ITV, the imperial war museum and many more awaiting your arrival. Media city also has plenty of options of restaurants to settle at after a long day of exploring such as Nandos, Brewski Bar and even a wagamama's which demonstrates is wide range of fascinating cuisines.</p>
+                <p>MediaCity UK, Arrive M50 2NT</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+                <img src="Assets/Attractions_1.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+                <img src="Assets/Attractions_2.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+                <img src="Assets/Attractions_3.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+            </div>
+                 <h3>Famous Establishments</h3>
+                 <p>Other than the city centre as per mentioned on its own page and media city there are also many spots around Manchester that are well known and iconic to the city and are a must try experience moving forward throughout the city of Manchester. These activities include indulging and one of Manchester most iconic buffets Tops, the smallest bar in europe and even the iconic trafford center.</p>
+                 <p>Trafford Centre: Trafford Park, Stretford, Manchester M17 8AA</p>
+                 <p>Tops Buffet: 106 Portland St, Manchester M1 4RJ</p>
+                 <p>Europe's Smallest Bar: Manchester M1 4GX</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+                <img src="Assets/Attractions_4.jpg" alt="Tops Buffet" style="width: 80%; max-width: 300px; height: 400px; margin-top: 20px;">
+                <img src="Assets/Attractions_5.jpg" alt="Europe's Smallest Bar" style="width: 80%; max-width: 300px; height: 400px; margin-top: 20px;">
+                <img src="Assets/Attractions_6.png" alt="Trafford Centre" style="width: 40%; max-width: 300px; height: 400px; margin-top: 20px;">
+            </div>
+        </article>
+    </body>
+</html>

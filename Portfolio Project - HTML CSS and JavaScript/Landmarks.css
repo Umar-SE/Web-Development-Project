@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #000000;
+    padding: 1px;
+    text-align: left;
+    font-size: 50px;
+    color: yellow;
+    border-bottom: 5px solid yellow;
+}
+
+header img {
+    float: right;
+    height: 50px;
+    margin: 5px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 1250px; /* only for demonstration, should be removed */
+    background: #000000;
+    padding: 0;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 1250px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Center the buttons in the nav menu*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/*Add spacing between the list items*/
+nav ul li {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+/* Optional: Add padding around the links */
+nav ul li a {
+    padding: 5px 10px; /*Adust the values for top/bottom and left/right padding*/
+    display: inline-block; /*Ensures the padding is applied to the entire link*/
+}
+
+ /* Style the links to look like buttons */
+ nav ul li a {
+    display: inline-block;
+    padding: 10px 15px; 
+    margin-bottom: 10px;
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Add hover effects */
+nav ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+/*Style for the section to use flexbox*/
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    flex: 1 1 20%;
+    min-width: 200px;
+    background: #ccc;
+    padding: 10px;
+}
+
+/*Style for the article to use flexbox*/
+article{
+    flex: 1 1 75%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+article h1, article h2 {
+    text-decoration: underline;
+}
+
+/*Responsive layout for smaller screens*/
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+
+nav, article {
+    flex: 1 1 100%;
+    width:100%;
+    height: auto;
+}
+
+nav ul {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        flex: 1 1 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+}

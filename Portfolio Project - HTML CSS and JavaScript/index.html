@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The City Bee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+
+        <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+            <h2 style="display: inline-block; margin: 0;">The City Bee</h2>
+            <button onclick="toggleTheme()" style="margin-left: 20px; padding: 10px; background-color: yellow; border: none; border-radius: 5px; cursor: pointer;">
+                Toggle Theme
+            </button> 
+            <img src="Assets/Header_Image.jpg" alt="Logo" style="float: right; height: 80px; margin: 5px;">
+        </header>
+
+        <script>
+            function toggleTheme() {
+                const body = document.body;
+                const article = document.querySelector("article");
+                const isDark = body.style.backgroundColor === 'black';
+
+                if (isDark) {
+                    body.style.backgroundColor = "White";
+                    body.style.color = "black";
+                    article.style.backgroundColor = "#f1f1f1";
+                } else {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "white";
+                    article.style.backgroundColor = "#000000";
+                }
+            }
+        </script>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="City.html">The City Life</a></li>
+                    <li><a href="Attractions.html">Iconic Attractions</a></li>
+                    <li><a href="Landmarks.html">Stunning Views</a></li>
+                </ul>
+            </nav>
+        </div>    
+            <article>
+                <h2>Welcome to Manchester!</h2>
+                <p>This is a city where history and culture thrive. Where the industrial heritage of the UK aligns with modern day culture and where every corner tells a unique story. If you’re a first timer or even somebody returning after a previous endeavour, this tour guide website is the most optimal guide out there to help you uncover and venture the best of Manchester.</p>
+                <h3>Manchester's History</h3>
+                <p>Manchester is formerly known for the birthplace of the well-known industrial revolution which is a significant era in the UK’s history. It can vary to various things like the infamous yet iconic red-brick warehouses in the northern quarter and even the grandeur in the Manchester town hall. The city offers an array of iconic landmarks which portray its history. Explore iconic museums like the science and industry museum to indulge in integrity that shaped this country and even the whole world. Groundbreaking discoveries which were found right here in the heart of Manchester. You can even take step into the Ryland library to witness firsthand the gothic architecture. Every corner in Manchester has a tale and this site is here to assist you.</p>
+                <h4>The culture and diversity</h4>
+                <p>Manchester is known to also be a cultural euphoria as its home to world class museums, art galleries and various theatres. You can take in the breath taking art galleries and exhibitions at the Whitworth and Manchester Art gallery whilst also music enjoyers can find themselves at the cities iconic music lineup at the O2 Apollo and Albert Hall. Finally, Theatre fanatics will bask in the glory of memorable performances at the Royal Exchange theatre and the lowry whether its indie music and classical, Manchester offers a substantial cultural experience. The food culture is also unbeatable from a traditional kebab or fish and chips to mouthwatering Michelin star restaurants. Ancoats houses a famous tart in local cafes and obtain stylish and modern rooftop bars with gorgeous city skyline views. Manchester “curry mile” also offers an array of flavours as it houses some of the best and known restaurants in the entire city. With a variation of global cuisines to local street food Manchester’s food scene has a different dish for every different palette. And not to even mention the sports scene is a crime as Manchester houses two of Footballs most iconic Football teams in the nation Manchester United and City.</p>
+                <h4>Have your trust in this guide!</h4>
+                <p>This guide is specifically tailored to be your go to guide for uncovering Manchester's secrets. It can be whether you’re looking for must see attraction, hidden gems and more; we’ve got your back. Let this site assist you and make the most of your time here in Manchester. This fabulous city is waiting for you and ensures that your visit will be filled with unforgettable moments. Please see the query box below for any questions.</p>
+                <form style="border: 5px solid black; padding: 20px; background-color: #f1f1f1; border-radius: 5px; margin-top: 20px;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <textarea id="message" name="message" required></textarea>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </body>
+    </html>

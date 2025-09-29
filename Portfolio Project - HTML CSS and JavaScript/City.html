@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The City Bee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="City.css">
+    </head>
+    <body>
+
+        <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+            <h2 style="display: inline-block; margin: 0;">The City Bee</h2>
+            <button onclick="toggleTheme()" style="margin-left: 20px; padding: 10px; background-color: yellow; border: none; border-radius: 5px; cursor: pointer;">
+                Toggle Theme
+            </button>
+            <img src="Assets/Header_Image.jpg" alt="Logo" style="float: right; height: 80px; margin: 5px;">
+        </header>
+        
+        <script>
+            function toggleTheme() {
+                const body = document.body;
+                const article = document.querySelector("article");
+                const isDark = body.style.backgroundColor === 'black';
+
+                if (isDark) {
+                    body.style.backgroundColor = "White";
+                    body.style.color = "black";
+                    article.style.backgroundColor = "#f1f1f1";
+                } else {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "white";
+                    article.style.backgroundColor = "#000000";
+                }
+            }
+        </script>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="City.html">The City Life</a></li>
+                    <li><a href="Attractions.html">Iconic Attractions</a></li>
+                    <li><a href="Landmarks.html">Stunning Views</a></li>
+                </ul>
+            </nav>
+        </div>
+            <article>
+                <h1>The City life and experience.</h1>
+                <p>Manchester has one of the most immersive city experiences anywhere in the UK has to offer with its large range of activities, restaurants and shopping centre's till your heart can stop. The sheer amount of beauty, depth and diversity this city offers to the average person it limitless as it allows people to do simply whatever they please depending on their own personal interests.</p>
+                
+                <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th style="border: 7px solid black; padding: 10px; background-color: #f1f1f1;">Activities</th>
+                            <th style="border: 7px solid black; padding: 10px; background-color: #f1f1f1;">Restaurants</th>
+                            <th style="border: 7px solid black; padding: 10px; background-color: #f1f1f1;">Shopping</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 5px solid black; padding: 10px;">Starting with more common activities such as pub crawling or clubbing are available in Manchester at places like the courtyard and the circus tavern. You can also rest in the well kept summer piccadilly gardens and venture through the markets in market street.</td>
+                            <td style="border: 5px solid black; padding: 10px;">Common takeaways used for convenience rather than having a formal sit-down meal. This includes places like Mc Donalds, KFC and Burger King. Also their are higher end takeaways that mostly are exclusive to limited amounts of cities such as Archies and Wingstop</td>
+                            <td style="border: 5px solid black; padding: 10px;">The Arndale shopping centre is a fully wrapped and complete building filled with many types of shooping joys such as clothing stores, tech, food markets and even jewlery. This wraps up a simple yet efficient experience of the city.</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 5px solid black; padding: 10px;">Some more tailored activities towards a certain audience include visiting museums such as the national football and national imperial war museum. Another activity you can do depending on the time of year is attend concerts and music festivals at the AO arena and new Co-op arena.</td>
+                            <td style="border: 5px solid black; padding: 10px;">Some more options for restaurants that this time are on the more higher end of dining include wagamama's, 63 degrees and Kala. These provide a more immersive and elegant experience in fine dining than most other options.</td>
+                            <td style="border: 5px solid black; padding: 10px;">Some alternatives to shopping at the huge shopping centres if your looking for a more secluded experience are places like afflecks and Elnecot.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>The city may seem like a scary place and very aggressive but, there are aspects of the city that make it so calm and peaceful and really outline the tranquility the city has to offer.</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+                    <img src="Assets/City_life_2.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+                    <img src="Assets/City_life_3.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+                    <img src="Assets/City_life_4.jpg" alt="Media City" style="width: 80%; max-width: 300px; margin-top: 20px;">
+                </div>
+                <p>As long as you meet the right people and have the right guide Manchester is the perfect city life like experience for people of all ages like the elderly, students and even families. There is much to do, much to explore and much to experience and take in. However you may get lost on your to each place so that's why there various trams and buses situated around the city which are specialised to help you navigate through the city clearly.</p>
+            </article>
+        </body>
+    </html>

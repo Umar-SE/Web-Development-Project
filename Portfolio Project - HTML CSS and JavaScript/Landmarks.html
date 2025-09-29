@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The City Bee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Landmarks.css">
+    </head>
+    <body>
+
+        <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+            <h2 style="display: inline-block; margin: 0;">The City Bee</h2>
+            <button onclick="toggleTheme()" style="margin-left: 20px; padding: 10px; background-color: yellow; border: none; border-radius: 5px; cursor: pointer;">
+                Toggle Theme
+            </button>
+            <img src="Assets/Header_Image.jpg" alt="Logo" style="float: right; height: 80px; margin: 5px;">
+        </header>
+
+        <script>
+             function toggleTheme() {
+                const body = document.body;
+                const article = document.querySelector("article");
+                const isDark = body.style.backgroundColor === 'black';
+
+                if (isDark) {
+                    body.style.backgroundColor = "White";
+                    body.style.color = "black";
+                    article.style.backgroundColor = "#f1f1f1";
+                } else {
+                    body.style.backgroundColor = "black";
+                    body.style.color = "white";
+                    article.style.backgroundColor = "#000000";
+                }
+            }
+        </script>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="City.html">The City Life</a></li>
+                    <li><a href="Attractions.html">Iconic Attractions</a></li>
+                    <li><a href="Landmarks.html">Stunning Views</a></li>
+                </ul>
+            </nav>
+        </div>
+            <article>
+                <h1>Breath-taking views and scenary.</h1>
+                <h2>The peak district</h2>
+                <p>This page has for you the most Breath-taking and gorgeous views of Manchester and its surroundings which includes places like parks, the peak district and greater manchester. Starting with the peak district situated just on the outside of Manchester is a beautiful collection of mountains and hiking trails for a fun and adventurous day out and witness the landscape.</p>
+                <iframe width="800" height="400" src="Assets/View_video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Stunning views of Manchester.</h3>
+                <p>Manchester may look like any other city in the UK however when we have those nice summer days the views you can find around the place are visually and aesthetically amazing and absolutely breath-taking. The nice rural architecture mixed with the beautiful blend of sun makes for a nice family function or hangout with some friends for some nice cold drinks and more.</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+                    <img src="Assets/View_1.jpg" alt="Views" style="width: 80%; max-width: 300px; height: 400px; margin-top: 20px;">
+                    <img src="Assets/View_2.jpg" alt="Views" style="width: 80%; max-width: 300px; height: 400px; margin-top: 20px;">
+                    <img src="Assets/View_3.jpg" alt="Views" style="width: 80%; max-width: 300px; height: 400px; margin-top: 20px;">
+                </div>
+            </article>
+        </body>
+    </html>
